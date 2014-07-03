@@ -84,9 +84,11 @@
 <script type="text/javascript">
 
   function createUIros() {
-    RoboInterface.orchSwitchTopic.publish(
-      new ROSLIB.Message({data: "transmit"})
-    );
+    setTimeout(function() {
+      RoboInterface.orchSwitchTopic.publish(
+        new ROSLIB.Message({data: "transmit"})
+      );
+    }, 1000);
 
     var strs = ["face-on", "face-off", "neck-on", "neck-off"];
     for (var i = 0; i < strs.length; i++) {
