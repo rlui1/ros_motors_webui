@@ -144,7 +144,7 @@
     }).on("success", function(e, _btnObjs) { //Note that btnObjs is a global variable
       btnObjs = _btnObjs.btnObjs; //Remove the object wrapper
       setFace(btnObjs[0].name, btnObjs[0].label);
-      setKnobPos(KNOB_OPTS.max*0.7);
+      //setKnobPos(KNOB_OPTS.max*0.7);
     });
     CommonUI.buildExpressionButtons(btnStack);
   }
@@ -227,8 +227,10 @@
   <div class="header">
     <span id="status" style="color: #FFFF88;">&#9679; Connecting</span>
     <div class="btn-group btn-group-xs">
-      <a href="/index.html" type="button" class="btn">Motors</a>
+      <a href="index.html" type="button" class="btn">Motors</a>
       <button type="button" class="btn highlight">Faces</button>
+      <a href="speech.html" type="button" class="btn">Speech</a>
+
     </div>
   </div>
   <div id="controlStack">

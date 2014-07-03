@@ -93,7 +93,6 @@ var RoboInterface = {
         url: address
       }).on("connection", function(e){
         RoboInterface.$.trigger("connection");
-        RoboInterface.sendDefaultMotorCmds();
       }).on("error", function(e){
         RoboInterface.$.trigger("error");
       });
@@ -114,13 +113,25 @@ var RoboInterface = {
         name:'/point_head',
         messageType:'basic_head_api/PointHead'
       });
+      RoboInterface.orchSwitchTopic = new ROSLIB.Topic({
+        ros:ros,
+        name:'/orch_switch',
+        messageType:'std_msgs/String'
+      });
 
-      //Subscribe to topic
+      //Subscribe to topics
       RoboInterface.motorCmdTopic.subscribe(function(msg) {
         RoboInterface.$.trigger("onMotorCmd", {
           msg: msg,
           confEntry: getConfFromID(msg.id)
         });
+      });
+      new ROSLIB.Topic({
+        ros:ros,
+        name:'/orch_switched',
+        messageType:'std_msgs/String'
+      }).subscribe(function(msg) {
+        RoboInterface.$.trigger("onOrchSwitched", msg);
       });
 
       //Set up services
