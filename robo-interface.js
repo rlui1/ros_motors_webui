@@ -118,6 +118,11 @@ var RoboInterface = {
         name:'/orch_switch',
         messageType:'std_msgs/String'
       });
+      RoboInterface.cmdSpeakTopic = new ROSLIB.Topic({
+        ros:ros,
+        name:'/cmd_speak',
+        messageType:'std_msgs/String'
+      });
 
       //Subscribe to topics
       RoboInterface.motorCmdTopic.subscribe(function(msg) {

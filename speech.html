@@ -119,6 +119,18 @@
       $("#status").css("color", "#FFAAAA");
       $("#status").html("&#9679; No connection");
     });
+
+    $("#btn-english").click(function(){
+      RoboInterface.cmdSpeakTopic.publish(
+        new ROSLIB.Message({data: "willoldman.wav"})
+      );
+    });
+
+    $("#btn-chinese").click(function(){
+      /*RoboInterface.cmdSpeakTopic.publish(
+        new ROSLIB.Message({data: "willoldman.wav"})
+      );*/
+    });
   });
 </script>
 
@@ -150,15 +162,15 @@
     <div style="display:inline-block; float:right">
       <div class="btnStack primaryStack" />
         <span class="stackLabel centre">Speak!</span>
-        <button type="button" class="btn">Hello!</button>
-        <button type="button" class="btn">Ola!</button>
+        <button type="button" class="btn" id="btn-english">Hello!</button>
+        <button type="button" class="btn" id="btn-chinese">Ola!</button>
       </div>
-      <div class="btnStack primaryStack" />
+      <!--<div class="btnStack primaryStack" />
         <span class="stackLabel centre">Grimace</span>
         <div class="centre" style="width: 80px">
           <button type="button" class="btn">Go</button>
         </div>
-      </div>
+      </div>-->
     </div style="display:inline-block">
   </div>
 </body>
