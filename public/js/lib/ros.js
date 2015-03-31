@@ -80,6 +80,11 @@ RosUI.ros = {
                 ros: RosUI.ros.ros,
                 name: '/blender_api/set_emotion_state',
                 messageType: 'blender_api_msgs/EmotionState'
+            }),
+            speech_active: new ROSLIB.Topic({
+                ros: RosUI.ros.ros,
+                name: '/'+RosUI.robot + '/speech_events',
+                messageType: 'std_msgs/String'
             })
         };
     },
