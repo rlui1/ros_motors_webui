@@ -31,6 +31,18 @@ RosUI.interaction = {
             }
         });
     },
+    wakeUp: function(){
+        annyang.start();
+    },
+    checkSleep: function(){
+        var lastSync = new Date().getTime(); 
+        setInterval(function(){
+            now = new Date().getTime();
+            if ((now -lastSync) > 2000){
+                RosUI.interaction.wakeUp();
+            }
+        },1000);
+    },
     loadPage: function () {
         var blenderMessage, blinkMessage, treeMessage;
 
@@ -54,7 +66,7 @@ RosUI.interaction = {
         };
         annyang.addCommands(commands);
         RosUI.interaction.started = false;
-
+        RosUI.interaction.checkSleep();
         //RosUI.gestures.demo.enable()
     },
     hello: function(){
