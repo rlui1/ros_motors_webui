@@ -76,3 +76,17 @@
 .app-expression-name {
     margin-top: 20px;
 }
+
+.app-movement-controls {
+    float: right;
+}
+
+.app-movement-controls .row-fluid {
+    margin-bottom: 5px;
+}
+
+.app-move-forward {
+    display: block;
+    width: 49px;
+    margin: 0 auto;
+}

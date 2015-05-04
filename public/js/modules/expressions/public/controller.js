@@ -34,16 +34,16 @@ define(['application', './views/expressions', 'lib/api', 'lib/utilities', 'lib/c
             },
             initExpressions: function () {
                 //Create crosshair
-                expressions.buildCrosshair(
-                    $(".crosshairsl"), {
-                        bgColor: "#485563",
-                        fgColor: "#fff"
-                    }
-                ).on("change", function (e, ui) {
-                        $(".crosshairsl")
-                            .crosshairsl("option", "xval", ui.xval)
-                            .crosshairsl("option", "yval", ui.yval);
-                    });
+                //expressions.buildCrosshair(
+                //    $(".crosshairsl"), {
+                //        bgColor: "#485563",
+                //        fgColor: "#fff"
+                //    }
+                //).on("change", function (e, ui) {
+                //        $(".crosshairsl")
+                //            .crosshairsl("option", "xval", ui.xval)
+                //            .crosshairsl("option", "yval", ui.yval);
+                //    });
 
                 //Create dial
                 $(".dial").knob({

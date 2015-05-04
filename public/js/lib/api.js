@@ -253,7 +253,26 @@ define(['jquery', 'roslib', './utilities'], function ($, ROSLIB, utilities) {
         getRobotName: function (callback) {
             var param = new ROSLIB.Param({ros: api.ros, name: '/robot_name'});
             param.get(callback);
-        }
+        },
+        /**
+         * Send movement command, limits send rate to 10 calls per second
+         *
+         * Directions:
+         * 0 - forward, 1 - back,  2 - left, 3 - right
+         *
+         * @param direction
+         */
+        _sendBodyControlCommand: function (direction) {
+            console.log('send: ' + direction);
+            api.topics.body_control.publish(
+                new ROSLIB.Message({
+                    play: direction
+                })
+            );
+        },
+        sendBodyControlCommand: utilities.limitCallRate(10, function () {
+            api._sendBodyControlCommand.apply(api, arguments);
+        })
     };
 
     return api;
