@@ -89,7 +89,7 @@ define(['jquery', 'roslib', 'jsyaml', './api'], function ($, ROSLIB, jsyaml, api
                 }),
                 body_control: new ROSLIB.Topic({
                     ros: api.ros,
-                    name: '/' + api.config.robot + '/body_control',
+                    name: '/' + api.config.robot + '/body_command',
                     messageType: 'std_msgs/String'
                 })
             };

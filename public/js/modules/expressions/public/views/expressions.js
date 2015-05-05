@@ -27,12 +27,13 @@ define(["application", "tpl!./templates/expressions.tpl", 'lib/api'], function (
                 this.setMovementInterval(3, this.ui.rightButton);
             },
             setMovementInterval: function (direction, button) {
+                api.sendBodyControlCommand(direction);
                 var interval = setInterval(function () {
                     if ($(button).is(':active'))
                         api.sendBodyControlCommand(direction);
                     else
                         clearInterval(interval);
-                }, 100);
+                }, 500);
             }
         });
     });

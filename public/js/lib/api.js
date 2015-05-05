@@ -266,7 +266,7 @@ define(['jquery', 'roslib', './utilities'], function ($, ROSLIB, utilities) {
             console.log('send: ' + direction);
             api.topics.body_control.publish(
                 new ROSLIB.Message({
-                    play: direction
+                    data: "play "+direction
                 })
             );
         },
