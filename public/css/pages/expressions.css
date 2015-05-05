@@ -9,10 +9,10 @@
 }
 
 .knobName {
+    float: left;
     font-size: 24px;
-    display: table;
-    margin: auto;
-    position: relative;
+    display: block;
+    margin: 88px 20px auto;
 }
 
 .crosshairsl {
