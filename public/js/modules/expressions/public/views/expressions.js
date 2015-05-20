@@ -12,7 +12,11 @@ define(["application", "tpl!./templates/expressions.tpl", 'lib/api'], function (
                 'mousedown @ui.forwardButton': 'moveForward',
                 'mousedown @ui.backwardButton': 'moveBackward',
                 'mousedown @ui.leftButton': 'moveLeft',
-                'mousedown @ui.rightButton': 'moveRight'
+                'mousedown @ui.rightButton': 'moveRight',
+                'touchstart @ui.forwardButton': 'moveForward',
+                'touchstart @ui.backwardButton': 'moveBackward',
+                'touchstart @ui.leftButton': 'moveLeft',
+                'touchstart @ui.rightButton': 'moveRight'
             },
             moveForward: function (e, a) {
                 this.setMovementInterval(0, this.ui.forwardButton);
@@ -33,7 +37,7 @@ define(["application", "tpl!./templates/expressions.tpl", 'lib/api'], function (
                         api.sendBodyControlCommand(direction);
                     else
                         clearInterval(interval);
-                }, 500);
+                }, 300);
             }
         });
     });
