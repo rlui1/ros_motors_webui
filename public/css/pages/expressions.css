@@ -57,7 +57,7 @@
         display: none;
     }
 
-    .expression-buttons {
+    .expression-button {
         margin: 0;
         display: table;
         padding-top: 5px;
@@ -69,10 +69,15 @@
         display: none;
     }
 
-    .expression-buttons {
+    .expression-button {
         display: inline-block;
     }
 }
+
+.expression-button {
+     width: 90px;
+}
+
 .app-expression-name {
     margin-top: 20px;
 }

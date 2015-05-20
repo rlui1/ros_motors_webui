@@ -27,6 +27,8 @@
                 <button class="app-move-right btn btn-primary" type="button"><span class="glyphicon glyphicon-circle-arrow-right" area-hidden="true"></span></button>
             </div>
         </div>
+        <div class="clearfix"></div>
+
         <div class="expression-buttons"></div>
     </div>
 </div>
