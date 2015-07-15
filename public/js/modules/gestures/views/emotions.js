@@ -1,8 +1,8 @@
-define(["application", "./emotion", 'tpl!./templates/emotions.tpl', 'lib/api'],
-    function (App, EmotionView, template, api) {
+define(["application", "./touch_button", 'tpl!./templates/emotions.tpl', 'lib/api'],
+    function (App, TouchButtonView, template, api) {
         App.module("Gestures.Views", function (Views, App, Backbone, Marionette, $, _) {
             Views.Emotions = Marionette.CompositeView.extend({
-                childView: EmotionView,
+                childView: TouchButtonView,
                 childViewContainer: '.app-emotions-container',
                 template: template,
                 ui: {
@@ -31,7 +31,12 @@ define(["application", "./emotion", 'tpl!./templates/emotions.tpl', 'lib/api'],
                  * @returns {{config: *}}
                  */
                 childViewOptions: function () {
-                    return {config: this.config};
+                    return {
+                        config: this.config,
+                        callback: function (name, speed, magnitude) {
+                            api.setEmotion(name, speed, magnitude);
+                        }
+                    };
                 },
                 /**
                  * Pass data to the template

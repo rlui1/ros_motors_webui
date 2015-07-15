@@ -1,8 +1,8 @@
-define(["application", "./gesture", 'tpl!./templates/gestures.tpl'],
-    function (App, GestureView, template) {
+define(["application", "./touch_button", 'tpl!./templates/gestures.tpl', 'lib/api'],
+    function (App, TouchButtonView, template, api) {
         App.module("Gestures.Views", function (Views, App, Backbone, Marionette, $, _) {
             Views.Gestures = Marionette.CompositeView.extend({
-                childView: GestureView,
+                childView: TouchButtonView,
                 template: template,
                 childItemContainer: '.app-gestures',
                 ui: {
@@ -26,7 +26,12 @@ define(["application", "./gesture", 'tpl!./templates/gestures.tpl'],
                     }
                 },
                 childViewOptions: function () {
-                    return {config: this.config};
+                    return {
+                        config: this.config,
+                        callback: function (name, speed, magnitude) {
+                            api.setGesture(name, 1, speed, magnitude);
+                        }
+                    };
                 },
                 serializeData: function () {
                     return this.config;

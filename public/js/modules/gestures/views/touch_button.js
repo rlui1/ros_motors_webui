@@ -1,7 +1,7 @@
-define(["application", "tpl!./templates/gesture.tpl", 'lib/api', 'lib/behaviors/touch_button'],
+define(["application", "tpl!./templates/touch_button.tpl", 'lib/behaviors/touch_button'],
     function (App, template, api) {
         App.module("Gestures.Views", function (Views, App, Backbone, Marionette, $, _) {
-            Views.Gesture = Marionette.ItemView.extend({
+            Views.TouchButton = Marionette.ItemView.extend({
                 tagName: 'span',
                 template: template,
                 ui: {
@@ -23,7 +23,9 @@ define(["application", "tpl!./templates/gesture.tpl", 'lib/api', 'lib/behaviors/
                         self = this;
 
                     if (duration > 0) {
-                        api.setGesture(this.model.get('name'), 1, duration, this.config.magnitude.current);
+                        if (typeof this.options.callback == 'function')
+                            this.options.callback(this.model.get('name'), duration, this.config.magnitude.current);
+
                         setTimeout(function () {
                             self.hideIndicators();
                         }, duration * 1000)
@@ -73,7 +75,8 @@ define(["application", "tpl!./templates/gesture.tpl", 'lib/api', 'lib/behaviors/
                     var duration = this.config.speed.current.toFixed(2);
 
                     if (duration > 0) {
-                        api.setGesture(this.model.get('name'), 1, duration, this.config.magnitude.current);
+                        if (typeof this.options.callback == 'function')
+                            this.options.callback(this.model.get('name'), duration, this.config.magnitude.current);
 
                         // hide indicators after duration
                         var self = this;
@@ -115,5 +118,5 @@ define(["application", "tpl!./templates/gesture.tpl", 'lib/api', 'lib/behaviors/
             });
         });
 
-        return App.module('Gestures.Views').Gesture;
+        return App.module('Gestures.Views').TouchButton;
     });
