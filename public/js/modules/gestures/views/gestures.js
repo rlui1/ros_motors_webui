@@ -21,8 +21,8 @@ define(["application", "./touch_button", 'tpl!./templates/gestures.tpl', 'lib/ap
                         multiplier: 100
                     },
                     magnitude: {
-                        default: 0.5,
-                        current: 0.5,
+                        default: 1,
+                        current: 1,
                         min: 0,
                         max: 1,
                         unit: '%',
