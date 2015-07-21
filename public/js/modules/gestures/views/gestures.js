@@ -7,22 +7,26 @@ define(["application", "./touch_button", 'tpl!./templates/gestures.tpl', 'lib/ap
                 childItemContainer: '.app-gestures',
                 ui: {
                     speedSlider: '.app-speed-slider',
-                    durationValue: '.app-speed-value',
+                    speedValue: '.app-speed-value',
                     magnitudeSlider: '.app-magnitude-slider',
                     magnitudeValue: '.app-magnitude-value'
                 },
                 config: {
                     speed: {
-                        default: 0.5,
-                        current: 0.5,
-                        min: 0,
-                        max: 10
+                        default: 1,
+                        current: 1,
+                        min: 0.5,
+                        max: 2,
+                        unit: '%',
+                        multiplier: 100
                     },
                     magnitude: {
                         default: 0.5,
                         current: 0.5,
                         min: 0,
-                        max: 1
+                        max: 1,
+                        unit: '%',
+                        multiplier: 100
                     }
                 },
                 childViewOptions: function () {
@@ -42,17 +46,17 @@ define(["application", "./touch_button", 'tpl!./templates/gestures.tpl', 'lib/ap
                     // init speed slider
                     this.ui.speedSlider.slider({
                         range: "min",
-                        min: 0,
-                        max: 1000,
+                        min: this.config.speed.min * 100,
+                        max: this.config.speed.max * 100,
                         value: this.config.speed.current * 100,
                         change: function (e, ui) {
-                            var duration = ui.value / 100.0;
+                            var speed = ui.value / 100.0;
 
                             // update ui label
-                            self.ui.durationValue.html(duration);
+                            self.ui.speedValue.html(speed * 100);
 
                             // update config
-                            self.config.speed.current = duration;
+                            self.config.speed.current = speed;
                         }
                     });
 

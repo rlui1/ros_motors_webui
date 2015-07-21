@@ -28,7 +28,7 @@ define(["application", "tpl!./templates/touch_button.tpl", 'lib/behaviors/touch_
 
                         setTimeout(function () {
                             self.hideIndicators();
-                        }, duration * 1000)
+                        }, 2000)
                     }
                 },
                 /**
@@ -82,7 +82,7 @@ define(["application", "tpl!./templates/touch_button.tpl", 'lib/behaviors/touch_
                         var self = this;
                         setTimeout(function () {
                             self.hideIndicators();
-                        }, duration * 1000)
+                        }, 2000)
                     } else {
                         this.hideIndicators();
                     }
@@ -100,8 +100,11 @@ define(["application", "tpl!./templates/touch_button.tpl", 'lib/behaviors/touch_
                     this.hideIndicators();
                 },
                 updateIndicators: function () {
-                    this.ui.duration.html(this.config.speed.current.toFixed(2) + 's');
-                    this.ui.intensity.html((this.config.magnitude.current * 100).toFixed(2) + '%');
+                    this.ui.duration.html(this.config.speed.current.toFixed(2) *
+                        this.config.speed.multiplier + this.config.speed.unit);
+
+                    this.ui.intensity.html((this.config.magnitude.current *
+                        this.config.magnitude.multiplier).toFixed(2) + this.config.magnitude.unit);
                 },
                 hideIndicators: function () {
                     $(this.ui.button).removeClass('active').blur();

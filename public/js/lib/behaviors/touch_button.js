@@ -25,7 +25,7 @@ define(['application', './init'], function (App) {
                 // if not the first
                 if (this.lastTouch) {
                     var diff = {
-                        x: (current.x - this.lastTouch.x) / 10,
+                        x: (current.x - this.lastTouch.x) / 100,
                         y: -(current.y - this.lastTouch.y) / 100
                     };
 

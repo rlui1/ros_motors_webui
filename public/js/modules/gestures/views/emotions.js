@@ -7,7 +7,7 @@ define(["application", "./touch_button", 'tpl!./templates/emotions.tpl', 'lib/ap
                 template: template,
                 ui: {
                     speedSlider: '.app-speed-slider',
-                    durationValue: '.app-speed-value',
+                    speedValue: '.app-speed-value',
                     magnitudeSlider: '.app-magnitude-slider',
                     magnitudeValue: '.app-magnitude-value'
                 },
@@ -16,13 +16,17 @@ define(["application", "./touch_button", 'tpl!./templates/emotions.tpl', 'lib/ap
                         default: 0.5,
                         current: 0.5,
                         min: 0,
-                        max: 10
+                        max: 10,
+                        unit: 's',
+                        multiplier: 1
                     },
                     magnitude: {
                         default: 0.5,
                         current: 0.5,
                         min: 0,
-                        max: 1
+                        max: 1,
+                        unit: '%',
+                        multiplier: 100
                     }
                 },
                 /**
@@ -57,7 +61,7 @@ define(["application", "./touch_button", 'tpl!./templates/emotions.tpl', 'lib/ap
                             var speed = ui.value / 100.0;
 
                             // update ui label
-                            self.ui.durationValue.html(speed);
+                            self.ui.speedValue.html(speed);
 
                             // update config
                             self.config.speed.current = speed;
