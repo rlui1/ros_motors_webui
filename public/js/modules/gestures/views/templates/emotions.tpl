@@ -1,6 +1,6 @@
 <div class="hidden-xs">
     <div class="pull-left">
-        <strong>Speed</strong>
+        <strong>Duration</strong>
     </div>
 
     <div class="app-slider-value-container">

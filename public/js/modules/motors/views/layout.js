@@ -1,10 +1,13 @@
-define(['application', 'tpl!./templates/layout.tpl'], function (App, template) {
+define(['application', 'tpl!./templates/layout.tpl', 'lib/regions/fade_in'], function (App, template, FadeInRegion) {
     App.module("Motors.Views", function (Common, App, Backbone, Marionette, $, _) {
         Common.Layout = Marionette.LayoutView.extend({
             template: template,
 
             regions: {
-                motors: ".app-motors",
+                motors: {
+                    el: ".app-motors",
+                    regionClass: FadeInRegion
+                }
             }
         });
     });

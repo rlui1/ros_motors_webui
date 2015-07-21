@@ -6,10 +6,9 @@
 # with every check.
 setup:
   env:
-    ROSNODELIST: sudo rosnode list
+    ROSNODELIST: rosnode list
   prepend:
-    - . ./rosfuncs.sh
-
+    - rosfuncs.sh
 # Property 'cmd' will be run as a sh command that should return statuscode 0
 # for success and 1 or other for failure.
 #

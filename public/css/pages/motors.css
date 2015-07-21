@@ -101,3 +101,13 @@ ul.app-motors {
     line-height: 1.5;
     margin-top: 10px;
 }
+
+.app-motors .app-slider-container {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.app-motors h3:first-child {
+    margin-top: 0;
+    line-height: 26px;
+}
