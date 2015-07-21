@@ -15,7 +15,7 @@ define(["application", "./touch_button", 'tpl!./templates/gestures.tpl', 'lib/ap
                     speed: {
                         default: 1,
                         current: 1,
-                        min: 0.5,
+                        min: 0,
                         max: 2,
                         unit: '%',
                         multiplier: 100

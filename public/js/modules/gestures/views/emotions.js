@@ -13,8 +13,8 @@ define(["application", "./touch_button", 'tpl!./templates/emotions.tpl', 'lib/ap
                 },
                 config: {
                     speed: {
-                        default: 0.5,
-                        current: 0.5,
+                        default: 3,
+                        current: 3,
                         min: 0,
                         max: 10,
                         unit: 's',
