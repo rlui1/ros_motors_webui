@@ -70,11 +70,16 @@ body {
     background-color: #df691a;
 }
 
-.panel .table-striped>tbody>tr:nth-child(odd) {
-    background-color: #495564;
+.panel .table-striped>tbody>tr:nth-child(odd),
+.panel .progress {
+    background-color: #485563;
 }
 
 .panel hr {
-    border-color: #495564;
+    border-color: #485563;
     margin: 0;
+}
+
+#camera-control-container .panel-body {
+    height: 230px;
 }

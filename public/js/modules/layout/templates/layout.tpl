@@ -22,7 +22,8 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul id="app-nav" class="nav navbar-nav navbar-right">
-                <li><a href="#/monitor">Monitoring Mockup</a></li>
+                <li><a href="#/monitor">Monitoring</a></li>
+                <li><a href="#/camera">Camera Control</a></li>
                 <li><a href="#/gestures">Gestures</a></li>
                 <li><a href="#/motors">Motors</a></li>
                 <li><a href="#/interactions">Chat</a></li>
