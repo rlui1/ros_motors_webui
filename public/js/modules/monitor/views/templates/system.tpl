@@ -33,6 +33,42 @@
                 </dl>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Processes</h3>
+                <hr/>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>PID</th>
+                        <th>Name</th>
+                        <th>CPU %</th>
+                        <th>MEM</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>blender</td>
+                        <td>15</td>
+                        <td>1232MB</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>robots_config</td>
+                        <td>15</td>
+                        <td>123MB</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>apache</td>
+                        <td>9</td>
+                        <td>54MB</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 

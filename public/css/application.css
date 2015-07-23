@@ -69,3 +69,12 @@ body {
 .panel .input-group-addon {
     background-color: #df691a;
 }
+
+.panel .table-striped>tbody>tr:nth-child(odd) {
+    background-color: #495564;
+}
+
+.panel hr {
+    border-color: #495564;
+    margin: 0;
+}
