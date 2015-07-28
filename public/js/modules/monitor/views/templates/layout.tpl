@@ -8,6 +8,7 @@
                 <li role="presentation" class="app-logs-link"><a href="#/monitor/logs">Logs</a></li>
                 <li role="presentation" class="app-system-link"><a href="#/monitor/system">System Load</a></li>
             </ul>
+            <br/>
         </div>
         <div class="app-content col-md-9"></div>
     </div>

@@ -52,3 +52,7 @@
 .app-send-button {
      margin-bottom: 10px;
 }
+
+.app-send-button {
+    width: 100%;
+}

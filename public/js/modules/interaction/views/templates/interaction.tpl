@@ -15,11 +15,9 @@
                     </span>
                 </div>
 
-                <div class="record-container col-sm-12">
-                    <button class="app-record-button btn btn-info btn-sm">
-                        Say "Hi" to start!
-                    </button>
-                </div>
+                <button class="app-record-button btn btn-info btn-sm">
+                    Say Hi to start
+                </button>
             </div>
         </div>
     </div>
