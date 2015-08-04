@@ -7,15 +7,14 @@ define(["application", './message', "tpl!./templates/interaction.tpl", 'lib/api'
                 childView: MessageView,
                 childViewContainer: '.app-messages',
                 ui: {
-                    recordButton: '.app-record-button',
                     messageInput: '.app-message-input',
                     sendButton: '.app-send-button',
                     unsupported: '.app-unsupported',
                     supported: '.app-supported',
-                    recordContainer: '.record-container'
+                    recordContainer: '.record-container',
+                    instructions: '.app-chatbox-instructions'
                 },
                 events: {
-                    'click @ui.recordButton': 'recognizeSpeech',
                     'keyup @ui.messageInput': 'messageKeyUp',
                     'click @ui.sendButton': 'sendClicked'
                 },
@@ -23,7 +22,6 @@ define(["application", './message', "tpl!./templates/interaction.tpl", 'lib/api'
                     self = this;
                 },
                 onRender: function () {
-                    var self = this;
                     api.topics.chat_responses.subscribe(function (msg) {
                         self.collection.add({author: 'Robot', message: msg.data});
                     });
@@ -84,9 +82,7 @@ define(["application", './message', "tpl!./templates/interaction.tpl", 'lib/api'
                             annyang.start();
                     }, 10000);
                 },
-                attachHtml: function (collectionView, childView, index) {
-                    var self = this;
-
+                attachHtml: function (collectionView, childView) {
                     childView.$el.hide();
                     collectionView._insertAfter(childView);
 
@@ -98,6 +94,9 @@ define(["application", './message', "tpl!./templates/interaction.tpl", 'lib/api'
 
                         self.scrolling = true;
                     });
+
+                    // hide chatbox instructions
+                    this.ui.instructions.hide();
                 },
                 sendMessage: function (message) {
                     self.collection.add({author: 'Me', message: message});
@@ -114,9 +113,6 @@ define(["application", './message', "tpl!./templates/interaction.tpl", 'lib/api'
                 },
                 bye: function () {
                     self.sendMessage('bye');
-                },
-                recognizeSpeech: function () {
-                    alert('Say Hi to start');
                 }
             });
         });

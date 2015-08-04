@@ -41,18 +41,13 @@
     margin-top: 10px;
 }
 
-.app-send-button {
+.app-say-as-robot-button, .app-send-button {
     height: 31px;
+    margin-right: 0 !important;
 }
 
-.app-send-button {
-    margin-left: 0;
-}
-
-.app-send-button {
-     margin-bottom: 10px;
-}
-
-.app-send-button {
-    width: 100%;
+.app-chatbox-instructions h3 {
+    text-align: center;
+    margin-top: 0;
+    letter-spacing: 1px;
 }
