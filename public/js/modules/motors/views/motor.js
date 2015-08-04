@@ -26,7 +26,8 @@ define(["application", "tpl!./templates/motor.tpl", 'jquery-ui'],
                     selectButton: '.app-select-motor-button',
                     selectButtonIcon: '.app-select-motor-button span',
                     anglesButton: '.app-angles-button',
-                    calibrationButton: '.app-calibration-button'
+                    calibrationButton: '.app-calibration-button',
+                    indicator: '.app-motor-status-indicator'
                 },
                 events: {
                     'click @ui.setMinButton': 'setMin',
@@ -117,6 +118,8 @@ define(["application", "tpl!./templates/motor.tpl", 'jquery-ui'],
 
                     // hide select buttons by default
                     this.showSelectButton(false);
+
+                    $('[data-toggle="popover"]').popover();
                 },
                 setMin: function () {
                     // cloning so that model change event is triggered

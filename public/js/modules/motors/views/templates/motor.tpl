@@ -44,7 +44,10 @@
 
     <div class="clearfix"></div>
 
-    <div class="app-slider"></div>
+    <div class="motor-slider-container clearfix">
+        <div class="app-slider"></div>
+        <div class="app-motor-status-indicator" data-toggle="popover" data-content="ok"></div>
+    </div>
 
     <div class="app-motors-show-on-edit">
         <button class="app-motors-set-min btn btn-default">Set Min</button>

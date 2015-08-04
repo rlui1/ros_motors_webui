@@ -8,8 +8,23 @@
     margin-bottom: 5px;
 }
 
+.motor-slider-container {
+    position: relative;
+}
+
+.app-motor-status-indicator {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    background-color: #5cb85c;
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .app-slider {
-    margin: 5px 0;
+    margin: 5px 30px 5px 0;
 }
 
 .hidden {
