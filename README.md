@@ -42,4 +42,4 @@ the now-obsolete `basic_head_api` interface, which is obsolete because it is too
 provide smooth transitions between different facial expressions.  Its just enough to move
 the neck, they eyes, and perform some basic facial animations, but that's all.
 
-##### Copyright 2014, 2015 (c) Hanson Robotics, Ltd.
+##### Copyright (c) 2014, 2015  Hanson Robotics, Ltd.
