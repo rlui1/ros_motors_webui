@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './views/expressions', 'lib/api', 'lib/utilities', 'lib/crosshair-slider',
         'vendor/jquery.knob'],
     function (App, ExpressionsView, api, utilities) {

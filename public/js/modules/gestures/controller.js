@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './views/layout', './views/gestures', './views/cycles','./views/performances',
         './views/emotions', 'lib/api', 'entities/gesture','entities/performance', 'entities/cycle', 'entities/emotion'],
     function (App, LayoutView, GesturesView, CyclesView, PerformancesView, EmotionsView,  api) {

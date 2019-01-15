@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './views/status', 'lib/api'],
     function (App, StatusView, api) {
         return {

@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['backbone', 'marionette', 'lib/ros', 'modules/layout/layout', 'lib/api'],
     function (Backbone, Marionette, ros, LayoutView, api) {
         var Application = new Marionette.Application();

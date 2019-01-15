@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['marionette'], function (Marionette) {
     return Marionette.Region.extend({
         attachHtml: function (view) {

@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['jquery', 'roslib', './utilities'], function ($, ROSLIB, utilities) {
     var api = {
         config: {},

@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "tpl!./templates/expression.tpl"], function (App, template) {
     App.module("Expressions.Admin.Views", function (View, RosApp, Backbone, Marionette, $, _) {
         View.Expression = Marionette.ItemView.extend({

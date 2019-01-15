@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "lib/api", "./views/layout", "../../motors/views/motors", './views/expressions',
         'entities/motor', 'entities/expression'],
     function (App, api, LayoutView, MotorsView, ExpressionsView) {

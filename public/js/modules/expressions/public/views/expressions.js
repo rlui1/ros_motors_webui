@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "tpl!./templates/expressions.tpl"], function (App, template) {
     App.module("Expressions.Views", function (Views, App, Backbone, Marionette, $, _) {
         Views.Expressions = Marionette.LayoutView.extend({

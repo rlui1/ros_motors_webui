@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['jquery', 'marionette', 'tpl!./templates/layout.tpl', 'lib/regions/fade_in'],
     function ($, Marionette, template, FadeInRegion) {
         return Marionette.LayoutView.extend({

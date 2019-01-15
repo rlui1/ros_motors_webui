@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# Copyright (c) 2015 Hanson Robotics, Ltd. 
 import os
 import os.path
 

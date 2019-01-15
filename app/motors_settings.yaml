@@ -1,3 +1,4 @@
+# Copyright (c) 2015 Hanson Robotics, Ltd. 
 motors:
   - {acceleration: 0.5, function: linear, group: Eyes, hardware: pololu, imax1: null,
     imax2: null, imin: null, init: 1563, lin_max: -0.342, lin_min: 0.252, max: 1801,

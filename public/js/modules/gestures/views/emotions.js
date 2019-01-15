@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "./emotion", 'tpl!./templates/emotions.tpl'],
     function (App, EmotionView, template) {
         App.module("Gestures.Views", function (Views, App, Backbone, Marionette, $, _) {

@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "tpl!./templates/message.tpl"], function (App, template) {
     App.module("Interaction.Views", function (Views, App, Backbone, Marionette, $, _) {
         Views.Message = Marionette.ItemView.extend({

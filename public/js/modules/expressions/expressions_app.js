@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './public/controller', './admin/controller'],
     function (App, PublicController, AdminController) {
         App.module('Expressions', function (Expressions, app, Backbone, Marionette, $, _) {

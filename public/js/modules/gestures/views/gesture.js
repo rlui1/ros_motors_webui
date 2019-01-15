@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "tpl!./templates/gesture.tpl", 'lib/api', 'lib/behaviors/touch_button'],
     function (App, template, api) {
         App.module("Gestures.Views", function (Views, App, Backbone, Marionette, $, _) {

@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './controller'], function (App, controller) {
     App.module('Gestures', function (Gestures, App, Backbone, Marionette, $, _) {
         Gestures.Router = Marionette.AppRouter.extend({

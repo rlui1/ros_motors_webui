@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', 'lib/api', 'lib/utilities'], function (App, api, utilities) {
     App.module('Entities', function (Entities, App, Backbone, Marionette, $, _) {
         Entities.Motor = Backbone.Model.extend({

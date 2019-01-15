@@ -1,3 +1,4 @@
+# Copyright (c) 2015 Hanson Robotics, Ltd. 
 import yaml
 from subprocess import call, check_output
 

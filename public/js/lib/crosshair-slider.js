@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['jquery', 'jquery-ui'], function ($) {
     $.widget("custom.crosshairsl", {
         options: {

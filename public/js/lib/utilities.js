@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(function () {
     return  {
         degToRad: function (val) {

@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "tpl!./templates/frame.tpl"], function (App, template) {
     App.module("Animations.Views", function (View, App, Backbone, Marionette, $, _) {
         View.Frame = Marionette.ItemView.extend({

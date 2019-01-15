@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "./motor", 'tpl!./templates/motors.tpl', 'jquery-ui'], function (App, motorView, motorsTemplate) {
     App.module("Motors.Views", function (View, App, Backbone, Marionette, $, _) {
         View.Motors = Marionette.CompositeView.extend({

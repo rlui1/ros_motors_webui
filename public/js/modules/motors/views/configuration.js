@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', 'tpl!./templates/configuration.tpl', 'backgrid', './config/motor_grid', 'lib/api',
         'entities/motor', 'backbone_pageable', 'backgrid_select_all', 'backgrid_filter', 'backgrid_paginator'],
     function (App, template, Backgrid, columns, api) {

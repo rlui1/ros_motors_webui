@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './views/interaction', 'lib/api', 'entities/interaction'],
     function (App, InteractionView, api) {
         return {

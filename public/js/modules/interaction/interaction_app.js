@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './controller'], function (App, controller) {
     App.module('Interaction', function (Interaction, app, Backbone, Marionette, $, _) {
         Interaction.Router = Marionette.AppRouter.extend({

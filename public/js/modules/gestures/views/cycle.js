@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "tpl!./templates/cycle.tpl", 'lib/api'], function (App, template, api) {
     App.module("Gestures.Views", function (Views, App, Backbone, Marionette, $, _) {
         Views.Cycle = Marionette.ItemView.extend({

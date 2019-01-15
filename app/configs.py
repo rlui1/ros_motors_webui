@@ -1,3 +1,4 @@
+# Copyright (c) 2015 Hanson Robotics, Ltd. 
 '''
 Creates confg from motor settings page
 '''

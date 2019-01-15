@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "./expression", 'tpl!./templates/expressions.tpl'],
     function (App, expressionView, template) {
         App.module("Expressions.Admin.Views", function (View, App, Backbone, Marionette, $, _) {

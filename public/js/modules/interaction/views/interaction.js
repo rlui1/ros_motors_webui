@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", './message', "tpl!./templates/interaction.tpl", 'lib/api', 'annyang'],
     function (App, MessageView, template, api, annyang) {
         var self;

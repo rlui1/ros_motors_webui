@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "tpl!./templates/status.tpl"], function (App, template) {
     App.module("Status.Views", function (Views, App, Backbone, Marionette, $, _) {
         Views.Status = Marionette.LayoutView.extend({

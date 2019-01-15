@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['backgrid', 'backgrid_text_cell'], function (Backgrid) {
     return [{
         // enable the select-all extension

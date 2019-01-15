@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', 'tpl!./templates/layout.tpl'], function (App, template) {
     App.module("Motors.Views", function (Views, App, Backbone, Marionette, $, _) {
         Views.Layout = Marionette.LayoutView.extend({

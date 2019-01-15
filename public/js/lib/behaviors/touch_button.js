@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './init'], function (App) {
     App.module('Behaviors', function (Behaviors, App, Backbone, Marionette, $, _) {
         /**

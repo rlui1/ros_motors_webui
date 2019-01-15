@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['jquery', 'roslib', 'jsyaml', './api'], function ($, ROSLIB, jsyaml, api) {
     var ros = {
         connect: function (success) {

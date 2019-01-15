@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "tpl!./templates/motor.tpl", 'jquery-ui'],
     function (App, motorTpl) {
         App.module("Motors.Views", function (View, App, Backbone, Marionette, $, _) {

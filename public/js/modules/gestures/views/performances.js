@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "./performance"], function (App, PerformanceView) {
     App.module("Gestures.Views", function (Views, App, Backbone, Marionette, $, _) {
         Views.Performances = Marionette.CollectionView.extend({

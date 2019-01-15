@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './controller'], function (App, controller) {
     App.module('Status', function (Status, app, Backbone, Marionette, $, _) {
         Status.Router = Marionette.AppRouter.extend({

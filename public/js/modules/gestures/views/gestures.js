@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "./gesture", 'tpl!./templates/gestures.tpl'],
     function (App, GestureView, template) {
         App.module("Gestures.Views", function (Views, App, Backbone, Marionette, $, _) {

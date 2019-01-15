@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(["application", "./frame", 'tpl!./templates/frames.tpl', 'jquery-ui'],
     function (App, frameView, framesTemplate, emptyTemplate) {
         App.module("Animations.Views", function (Views, App, Backbone, Marionette, $, _) {

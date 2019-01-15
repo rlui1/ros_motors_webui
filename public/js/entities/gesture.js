@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', 'lib/api'], function (App, api) {
     App.module('Entities', function (Entities, App, Backbone, Marionette, $, _) {
         Entities.Gesture = Backbone.Model.extend();

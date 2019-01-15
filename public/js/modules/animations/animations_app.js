@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', './controller'], function (App, controller) {
     App.module('Animations', function (Animations, app, Backbone, Marionette, $, _) {
         Animations.Router = Marionette.AppRouter.extend({

@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Hanson Robotics, Ltd. 
 define(['application', 'tpl!./templates/layout.tpl', 'bootstrap'],
     function (App, template) {
         App.module('Animations.Views', function (Views, App, Backbone, Marionette, $, _) {
