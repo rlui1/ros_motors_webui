@@ -34,3 +34,12 @@ Currently supported:
  2. Pololulu using [ros_pololu_servo node](https://github.com/hansonrobotics/ros_pololu_servo)
 
 ----------
+
+## Status
+This code was used during the 2014-2015 time-frame to control the mini-Einstein robot head.
+It has not been used or maintained since then.  One problem with this code is that it uses
+the now-obsolete `basic_head_api` interface, which is obsolete because it is too simple to 
+provide smooth transitions between different facial expressions.  Its just enough to move
+the neck, they eyes, and perform some basic facial animations, but that's all.
+
+##### Copyright 2014, 2015 (c) Hanson Robotics, Ltd.
